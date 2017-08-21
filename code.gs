@@ -85,7 +85,7 @@ function execute() {
 
 function replace_heading(level, text) {
   var stripped;
-  stripped = text.replace(/^(\d+\.){1,}/i, '').replace(/(^\s+)|(\s+$)/g, '');
+  stripped = text.replace(/^(\d+\.){1,}/i, '').replace(/^\d+．|\d+\s/, '').replace(/(^\s+)|(\s+$)/g, '');
   level.push(' ');
   return level.join('.') + stripped;
 }
