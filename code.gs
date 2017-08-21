@@ -36,7 +36,7 @@ HeadingCounter = (function() {
     if (this.counter.hasOwnProperty(_level)) {
       this.counter[_level]++;
       var next_level = HeadingCounter.HEADINGS[HeadingCounter.HEADINGS.indexOf(_level)+1];
-      this.reset(next_level);
+      if (next_level != undefined) this.reset(next_level);
     }
     return this.counter[_level];
   };
