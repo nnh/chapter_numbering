@@ -1,0 +1,28 @@
+{
+  "name": "protocol-splitter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "Private",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "latest",
+    "@types/google-apps-script": "latest",
+    "@types/mocha": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "chai": "latest",
+    "clasp": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-prettier": "latest",
+    "mocha": "latest",
+    "prettier": "latest",
+    "ts-mocha": "latest",
+    "typescript": "latest",
+    "typescript-language-server": "latest"
+  },
+  "scripts": {
+    "start": "clasp push -w",
+    "test": "ts-mocha test/*.test.ts"
+  }
+}
