@@ -1,4 +1,10 @@
-var _ = Underscore.load();
+function myMap(array, func) {
+  const res = [];
+  for (var i = 0; i < array.length; ++i) {
+    res.push(func(array[i], i, array));
+  }
+  return res;
+}
 
 var HeadingCounter,
     __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
@@ -47,7 +53,7 @@ HeadingCounter = (function() {
     if (__indexOf.call(HeadingCounter.HEADINGS, _level) >= 0) {
       i = HeadingCounter.HEADINGS.indexOf(_level);
       var _this = this;
-      return _.map(HeadingCounter.HEADINGS.slice(0, i + 1 || 9e9), function(num) {
+      return myMap(HeadingCounter.HEADINGS.slice(0, i + 1 || 9e9), function(num) {
         return _this.counter[num];
       });
     } else {
@@ -90,10 +96,28 @@ function replace_heading(level, text) {
   return level.join('.') + stripped;
 }
 
-function onOpen() {
-  DocumentApp.getUi().createAddonMenu().addItem('実行', 'execute').addToUi();
+function checkWorkflow() {
+  SpreadsheetApp.getUi().alert("Hello")
 }
 
-function onInstall() {
-  onOpen();
+function onOpen(e) {
+  var menu = DocumentApp.getUi().createAddonMenu()
+  if (e && e.authMode == ScriptApp.AuthMode.NONE) {
+    // Add a normal menu item (works in all authorization modes).
+    menu.addItem('実行', 'execute');
+  } else {
+    // Add a menu item based on properties (doesn't work in AuthMode.NONE).
+    var properties = PropertiesService.getDocumentProperties();
+    var workflowStarted = properties.getProperty('workflowStarted');
+    if (workflowStarted) {
+      menu.addItem('Check workflow status', 'checkWorkflow');
+    } else {
+      menu.addItem('実行', 'execute');
+    }
+  }
+  menu.addToUi();
+}
+
+function onInstall(e) {
+  onOpen(e);
 }
