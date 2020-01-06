@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "Private",
-  "dependencies": {},
+  "dependencies": {
+    "@google/clasp": "^2.3.0"
+  },
   "devDependencies": {
     "@types/chai": "latest",
     "@types/google-apps-script": "latest",
@@ -11,7 +13,6 @@
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "chai": "latest",
-    "clasp": "latest",
     "eslint": "latest",
     "eslint-config-prettier": "latest",
     "eslint-plugin-prettier": "latest",
