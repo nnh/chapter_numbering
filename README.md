@@ -37,3 +37,8 @@
 - 行頭は全角空白文字による字下げ1回は許容範囲です。文の途中での字下げは禁止です。
 - 太文字、斜体、上付き、下付き、下線も可能な限り、避けて下さい。
 - 引用文献は[1]のようなスタイルで記載下さい。
+
+License
+-------
+chapter_numbering is licensed under the [MIT](#) license.
+Copyright &copy; 2017, NHO Nagoya Medical Center and NPO-OSCR
