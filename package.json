@@ -2,9 +2,9 @@
   "name": "protocol-splitter",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "Private",
+  "license": "MIT",
   "dependencies": {
-    "@google/clasp": "^2.3.0"
+    "@google/clasp": "latest"
   },
   "devDependencies": {
     "@types/chai": "latest",
