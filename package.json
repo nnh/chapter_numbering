@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@google/clasp": "*",
     "@types/chai": "*",
     "@types/google-apps-script": "*",
     "@types/mocha": "*",
@@ -14,7 +15,6 @@
     "eslint": "*",
     "eslint-config-prettier": "*",
     "eslint-plugin-prettier": "*",
-    "forked-clasp": "^2.11.2",
     "mocha": "*",
     "prettier": "*",
     "ts-mocha": "*",
