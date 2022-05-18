@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
-    "@google/clasp": "^2.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@google/clasp": "*",
     "@types/chai": "*",
     "@types/google-apps-script": "*",
     "@types/mocha": "*",
