@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@google/clasp": "^2.4.1"
+  },
   "devDependencies": {
     "@types/chai": "*",
     "@types/google-apps-script": "*",
@@ -14,7 +16,6 @@
     "eslint": "*",
     "eslint-config-prettier": "*",
     "eslint-plugin-prettier": "*",
-    "forked-clasp": "^2.11.2",
     "mocha": "*",
     "prettier": "*",
     "ts-mocha": "*",
