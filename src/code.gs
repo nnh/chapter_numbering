@@ -70,7 +70,8 @@ function execute() {
   var paragraphs = body.getParagraphs();
 
   var counter = new HeadingCounter();
-  for each (p in paragraphs) {
+  for (let key in paragraphs) {
+    let p = paragraphs[key];
     var h = p.getHeading();
     counter.increment(h);
     var level = counter.sequence(h)
