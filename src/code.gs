@@ -97,25 +97,9 @@ function replace_heading(level, text) {
   return level.join('.') + stripped;
 }
 
-function checkWorkflow() {
-  SpreadsheetApp.getUi().alert("Hello")
-}
-
 function onOpen(e) {
-  var menu = DocumentApp.getUi().createAddonMenu()
-  if (e && e.authMode == ScriptApp.AuthMode.NONE) {
-    // Add a normal menu item (works in all authorization modes).
-    menu.addItem('実行', 'execute');
-  } else {
-    // Add a menu item based on properties (doesn't work in AuthMode.NONE).
-    var properties = PropertiesService.getDocumentProperties();
-    var workflowStarted = properties.getProperty('workflowStarted');
-    if (workflowStarted) {
-      menu.addItem('Check workflow status', 'checkWorkflow');
-    } else {
-      menu.addItem('実行', 'execute');
-    }
-  }
+  const menu = DocumentApp.getUi().createAddonMenu();
+  menu.addItem('実行', 'execute');
   menu.addToUi();
 }
 
