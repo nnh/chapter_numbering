@@ -38,12 +38,14 @@ Heading2
 ***
 
 ## 注意事項
+- このアドオンはGoogleドキュメント形式のファイルでのみ動作します。Word形式のファイル（.docx）では動作しません。
 - 見出し1の後に見出し3を使うなど、数字の順番が飛ぶと0が挿入されてしまいます。
 - ルーラーは使わないで下さい。
 - 行頭は全角空白文字による字下げ1回は許容範囲です。文の途中での字下げは禁止です。
 - 太文字、斜体、上付き、下付き、下線も可能な限り、避けて下さい。
 - 引用文献は[1]のようなスタイルで記載下さい。
 ## Important Notes
+- This add-on only works with files in the Google Docs format. It does not work with Word format files (.docx).
 - If you use Heading 3 after Heading 1, skipping the numbering sequence, a zero (0) will be inserted.
 - Please avoid using the ruler.
 - Indenting the first line with one full-width space is acceptable. However, indenting within a sentence is not allowed.
