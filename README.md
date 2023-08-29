@@ -51,6 +51,15 @@ Heading2
 - Indenting the first line with one full-width space is acceptable. However, indenting within a sentence is not allowed.
 - Please avoid using bold, italics, superscript, subscript, and underline as much as possible.
 - When citing references, please use the style [1].
+***  
+## 制限事項
+一つの提案に複数のスマートチップが入力されている場合、次のエラーが発生します：  
+```Exception: Unexpected error while getting the method or property openById on object DocumentApp.```  
+その結果、処理が予期せず終了してしまいます。こうした場合には、関連する提案を承認または拒否してから再度実行してください。  
+## Limitations
+If multiple smart chips are entered for a single suggestion, the following error will occur:  
+```Exception: Unexpected error while getting the method or property openById on object DocumentApp.```  
+As a result, the process will terminate unexpectedly. In such cases, please approve or reject the relevant suggestion before executing it again.  
 
 ***
 ## Install
