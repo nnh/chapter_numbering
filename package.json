@@ -19,7 +19,7 @@
     "prettier": "*",
     "ts-mocha": "*",
     "typescript": "*",
-    "typescript-language-server": "*"
+    "typescript-language-server": "4.3.3"
   },
   "scripts": {
     "start": "clasp push -w",
