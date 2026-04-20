@@ -21,6 +21,9 @@
     "typescript": "*",
     "typescript-language-server": "4.3.3"
   },
+  "resolutions": {
+    "minimatch": "^3.1.4"
+  },
   "scripts": {
     "start": "clasp push -w",
     "test": "ts-mocha test/*.test.ts"
